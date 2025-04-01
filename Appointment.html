@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL APPOINTMENT BOOKING</title>
+    <link rel="stylesheet" href="Appointment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BOOK AN APPOINTMENT</h1>
+        <form action="/submit-appointment" method="post">
+            <div class="form-group">
+                <label for="name">FULL NAME:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">PHONE NUMBER:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">APPOINTMENT DATE:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">APPOINTMENT TIME:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="general-consultation">GENERAL-CONSULTATION</option>
+                    <option value="dental-checkup">DENTAL CHECKUP</option>
+                    <option value="eye-examination">EYE EXAMINATION</option>
+                    <option value="physiotherapy">PHYSIOTHERAPY</option>
+                    <option value="physiotherapy">SURGERY</option>
+                </select>
+            </div>
+            <button type="submit">BOOK AN APPOINTMENT</button>
+        </form>
+    </div>
+</body>
+</html>
